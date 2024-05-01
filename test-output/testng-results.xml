@@ -1,47 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-30T04:10:45Z" name="Default suite" finished-at="2024-04-30T04:10:56Z" duration-ms="11688">
+  <suite started-at="2024-05-01T13:06:59Z" name="Suite" finished-at="2024-05-01T13:07:30Z" duration-ms="31565">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@15888343]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:ericwin.tests.SubmitOrderTest@3b0fe47a]" name="submitOrder" class="ericwin.tests.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationsTest.loginErrorValidation()[pri:0, instance:ericwin.tests.ErrorValidationsTest@5f049ea1]" name="loginErrorValidation" class="ericwin.tests.ErrorValidationsTest"/>
+      </group> <!-- ErrorHandling -->
     </groups>
-    <test started-at="2024-04-30T04:10:45Z" name="Default test" finished-at="2024-04-30T04:10:56Z" duration-ms="11688">
-      <class name="cucumber.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@15888343]" started-at="2024-04-30T11:10:45Z" name="setUpClass" finished-at="2024-04-30T11:10:46Z" duration-ms="972" status="PASS">
+    <test started-at="2024-05-01T13:06:59Z" name="Error Validation Test" finished-at="2024-05-01T13:07:19Z" duration-ms="20468">
+      <class name="ericwin.tests.ErrorValidationsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ericwin.tests.ErrorValidationsTest@5f049ea1]" started-at="2024-05-01T20:06:59Z" name="launchApplication" finished-at="2024-05-01T20:07:09Z" duration-ms="10405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginErrorValidation()[pri:0, instance:ericwin.tests.ErrorValidationsTest@5f049ea1]" started-at="2024-05-01T20:07:09Z" name="loginErrorValidation" finished-at="2024-05-01T20:07:10Z" duration-ms="1115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ericwin.tests.ErrorValidationsTest@5f049ea1]" started-at="2024-05-01T20:07:10Z" name="tearDown" finished-at="2024-05-01T20:07:10Z" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ericwin.tests.ErrorValidationsTest@5f049ea1]" started-at="2024-05-01T20:07:10Z" name="launchApplication" finished-at="2024-05-01T20:07:15Z" duration-ms="4590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="productErrorValidation()[pri:0, instance:ericwin.tests.ErrorValidationsTest@5f049ea1]" started-at="2024-05-01T20:07:15Z" name="productErrorValidation" finished-at="2024-05-01T20:07:19Z" duration-ms="3901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ericwin.tests.ErrorValidationsTest@5f049ea1]" started-at="2024-05-01T20:07:19Z" name="tearDown" finished-at="2024-05-01T20:07:19Z" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ericwin.tests.ErrorValidationsTest -->
+    </test> <!-- Error Validation Test -->
+    <test started-at="2024-05-01T13:06:59Z" name="Submit Order Test" finished-at="2024-05-01T13:07:30Z" duration-ms="31565">
+      <class name="ericwin.tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ericwin.tests.SubmitOrderTest@3b0fe47a]" started-at="2024-05-01T20:06:59Z" name="launchApplication" finished-at="2024-05-01T20:07:09Z" duration-ms="9657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:ericwin.tests.SubmitOrderTest@3b0fe47a]" started-at="2024-05-01T20:07:09Z" name="submitOrder" data-provider="getData" finished-at="2024-05-01T20:07:15Z" duration-ms="5718" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4860827a]]>
+                <![CDATA[{password=Ericwin123, product=ADIDAS ORIGINAL, email=eric.win@mailwin.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@15888343]" started-at="2024-04-30T11:10:46Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-30T11:10:56Z" duration-ms="10613" status="PASS">
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ericwin.tests.SubmitOrderTest@3b0fe47a]" started-at="2024-05-01T20:07:15Z" name="tearDown" finished-at="2024-05-01T20:07:15Z" duration-ms="234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ericwin.tests.SubmitOrderTest@3b0fe47a]" started-at="2024-05-01T20:07:15Z" name="launchApplication" finished-at="2024-05-01T20:07:20Z" duration-ms="5079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:ericwin.tests.SubmitOrderTest@3b0fe47a]" started-at="2024-05-01T20:07:20Z" name="submitOrder" data-provider="getData" finished-at="2024-05-01T20:07:24Z" duration-ms="4513" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Positive Test of Submitting the order"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Purchase the order from Ecommerce Website"]]>
+                <![CDATA[{password=Ericwin123, product=ZARA COAT 3, email=eric.win2@mailwin.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@15888343]" started-at="2024-04-30T11:10:56Z" name="tearDownClass" finished-at="2024-04-30T11:10:56Z" duration-ms="62" status="PASS">
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ericwin.tests.SubmitOrderTest@3b0fe47a]" started-at="2024-05-01T20:07:24Z" name="tearDown" finished-at="2024-05-01T20:07:25Z" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- cucumber.TestNGTestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ericwin.tests.SubmitOrderTest@3b0fe47a]" started-at="2024-05-01T20:07:25Z" name="launchApplication" finished-at="2024-05-01T20:07:29Z" duration-ms="4569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="orderHistoryTest()[pri:0, instance:ericwin.tests.SubmitOrderTest@3b0fe47a]" started-at="2024-05-01T20:07:29Z" name="orderHistoryTest" finished-at="2024-05-01T20:07:30Z" depends-on-methods="ericwin.tests.SubmitOrderTest.submitOrder" duration-ms="957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ericwin.tests.SubmitOrderTest@3b0fe47a]" started-at="2024-05-01T20:07:30Z" name="tearDown" finished-at="2024-05-01T20:07:30Z" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ericwin.tests.SubmitOrderTest -->
+    </test> <!-- Submit Order Test -->
+  </suite> <!-- Suite -->
 </testng-results>
